@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QChronoTimer>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,7 +25,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QImage image;
-    QChronoTimer timer;
+    QTimer timer;
     void redraw();
 };
 #endif // MAINWINDOW_H
